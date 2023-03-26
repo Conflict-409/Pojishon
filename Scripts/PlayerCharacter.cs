@@ -60,11 +60,11 @@ public partial class PlayerCharacter : RigidBody2D
 		// Debugging information
 		if (OS.IsDebugBuild())
 		{
-			GetNode<Label>("/root/Node2D/DebugUtils/Position/Value").Text = Position.ToString();
-			GetNode<Label>("/root/Node2D/DebugUtils/TargetVelocity/Value").Text = TargetSpeed.ToString();
-			GetNode<Label>("/root/Node2D/DebugUtils/Velocity/Value").Text = new Vector2((float)Math.Round(LinearVelocity.X), (float)Math.Round(LinearVelocity.Y)).ToString();
-			GetNode<Label>("/root/Node2D/DebugUtils/FPS/Value").Text = Engine.GetFramesPerSecond().ToString();
-			GetNode<Label>("/root/Node2D/DebugUtils/FrameDelay/Value").Text = Math.Round(delta*1000,2).ToString() + "ms";
+			GetNode<Label>("/root/Node2D/PlayerCharacter/Camera2D/CanvasLayer/DebugUtils/Position/Value").Text = Position.ToString();
+			GetNode<Label>("/root/Node2D/PlayerCharacter/Camera2D/CanvasLayer/DebugUtils/TargetVelocity/Value").Text = TargetSpeed.ToString();
+			GetNode<Label>("/root/Node2D/PlayerCharacter/Camera2D/CanvasLayer/DebugUtils/Velocity/Value").Text = new Vector2((float)Math.Round(LinearVelocity.X), (float)Math.Round(LinearVelocity.Y)).ToString();
+			GetNode<Label>("/root/Node2D/PlayerCharacter/Camera2D/CanvasLayer/DebugUtils/FPS/Value").Text = Engine.GetFramesPerSecond().ToString();
+			GetNode<Label>("/root/Node2D/PlayerCharacter/Camera2D/CanvasLayer/DebugUtils/FrameDelay/Value").Text = Math.Round(delta*1000,2).ToString() + "ms";
 		}
 		// Debugging Information
 
